@@ -1,6 +1,11 @@
 # LivePollView
 A Portfolio Project in partial fulfilment for the requirements of the ALX Software Engineering program
 
+Authors:
+- Peter
+- Ezechiel
+- Japhet
+
 
 ## Setup Requirements
 At the moment, we're using sqlite for portability. For production, we'll move to a RDBMS, like
