@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			marker = new L.marker([states[i].location.coordinates[0], states[i].location.coordinates[1]])
 				.bindPopup(states[i].name)
 				.addTo(map);
+			marker.on('click', function (e) {
+				alert("Test click on marker");
+			})
 		}
 	});
 });
