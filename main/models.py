@@ -8,7 +8,7 @@ class Election(models.Model):
 
 class State(models.Model):
 	name = models.CharField(max_length=100)
-	location = models.PointField(null=True, geography=True)
+	location = models.PointField(null=True, geography=True, srid=4326)
 
 
 class Party(models.Model):
