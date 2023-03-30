@@ -1,3 +1,4 @@
 **/migrations
 venv
 static
+LivePollView/__pycache__/*
