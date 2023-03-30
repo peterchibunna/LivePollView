@@ -1,137 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Poll View</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
-<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Live Poll View</title>
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
 </head>
 <body>
-  <!-------------------------NavBar section-------------------------------->
-  <section id="nav-bar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><strong>Live Poll View</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          <i class="fa fa-bars" aria-hidden="true"></i>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto mr-10">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Election Type
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Presidential</a>
-                <a class="dropdown-item" href="#">Senatorial</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">House of Reps</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Testimonies</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </section>
+<!-------------------------NavBar section-------------------------------->
+<section id="nav-bar">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#"><strong>Live Poll View</strong></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</button>
 
-    <!----------------------------------------Banner section----------------------------------------------------->
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto mr-10">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About Us</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Election Type
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Presidential</a>
+						<a class="dropdown-item" href="#">Senatorial</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">House of Reps</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Testimonies</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		</div>
+	</nav>
+</section>
 
-  <section id="banner">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="promo-title">YOUR ACCESSIBLITY IS ALWAYS GUARANTEED</p>
-          <p>Penetrate the modern technology with just a click! View all the Election as voting is going on. Have no worries, your comfort is all we want!</p>
-          <a href="#"><img src="https://th.bing.com/th/id/OIP.JKtn1Iv09NLiW8mqDLU19wHaHa?pid=ImgDet&rs=1" class="play-btn">Watch Now!</a>
-        </div>
-        <div class="col-md-6">
-          <img src="https://mail.google.com/mail/u/0?ui=2&ik=b0f0a834c5&attid=0.1&permmsgid=msg-a:r-4833827739508810334&th=18727aa319602896&view=att&disp=safe&realattid=f_lfs38ldz0" width="100%" height="100%">
-        </div>
-      </div>
-    </div>
-    <img src="https://th.bing.com/th/id/R.baadf85564508bbf8f462fa974735ee3?rik=3eRKbGMsAOtF4Q&riu=http%3a%2f%2fillawarracpap.com.au%2fimages%2fabout-page-bg.png&ehk=SCCaLxMdHRR0XiBOO6EZoiW%2bQISogn6myvavlJcnr%2fI%3d&risl=&pid=ImgRaw&r=0" class="bottom-img">
-  </section>
+<!----------------------------------------Banner section----------------------------------------------------->
+
+<section id="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<p class="promo-title">YOUR ACCESSIBLITY IS ALWAYS GUARANTEED</p>
+				<p>Penetrate the modern technology with just a click! View all the Election as voting is going on. Have no
+					worries, your comfort is all we want!</p>
+				<a href="#"><img src="https://th.bing.com/th/id/OIP.JKtn1Iv09NLiW8mqDLU19wHaHa?pid=ImgDet&rs=1" class="play-btn">Watch
+					Now!</a>
+			</div>
+			<div class="col-md-6">
+				<img src="https://mail.google.com/mail/u/0?ui=2&ik=b0f0a834c5&attid=0.1&permmsgid=msg-a:r-4833827739508810334&th=18727aa319602896&view=att&disp=safe&realattid=f_lfs38ldz0" width="100%" height="100%">
+			</div>
+		</div>
+	</div>
+	<img src="https://th.bing.com/th/id/R.baadf85564508bbf8f462fa974735ee3?rik=3eRKbGMsAOtF4Q&riu=http%3a%2f%2fillawarracpap.com.au%2fimages%2fabout-page-bg.png&ehk=SCCaLxMdHRR0XiBOO6EZoiW%2bQISogn6myvavlJcnr%2fI%3d&risl=&pid=ImgRaw&r=0" class="bottom-img">
+</section>
 <!-----------------section services---------------------------->
-  <section id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 services">
-          <img src="https://mail.google.com/mail/u/0?ui=2&ik=2896c403e2&attid=0.4&permmsgid=msg-a:r-4100486528872831214&th=187191319f31e80e&view=att&disp=safe&realattid=f_lfo1ht921">
-          <h4>Cast Your vote Wisely</h4>
-          <p>The future generation is build on the shpere on technology. View all the Election as voting is going on. Have no worries, your comfort is all we want!</p>
-        </div>
-        <div class="col-md-4 services">
-          <img src="https://img.freepik.com/free-vector/work-time-concept-illustration_114360-1074.jpg?t=st=1679777611~exp=1679778211~hmac=e562d79bdc8d8a78aadb50bcfcd7517bb5e0b1cae6d0b85b5e4508d4b749ec0e" class="service-img">
-          <h4>View Your Result</h4>
-          <p>With Your Mobile Device or Your Computer, view the result now! Have no worries, your comfort is all we want!</p>
-        </div>
-        <div class="col-md-4 services">
-          <img src="https://img.freepik.com/free-vector/progress-concept-illustration_114360-1522.jpg?t=st=1679777611~exp=1679778211~hmac=d22e230552417a1a68c89d1832021aa5561e9ef92bdb26cb965dcfe3eec5a282" class="service-img">
-          <h4>Run To Your Polling Unit</h4>
-          <p>The future generation is build on the shpere on technology. View all the Election as voting is going on. Have no worries, your comfort is all we want!</p>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  <!-----------------section social-media------>
-  <section id="social-media">
-    <div class="container text-center">
-      <p>Find Us On Social Media</p>
-      <div class="social-icons">
-      <a href="#"><img src="https://img.icons8.com/nolan/256/linkedin.png"></a>
-      <a href="#"><img src="https://img.icons8.com/stickers/256/medium-logo.png"></a>
-      <a href="#"><img src="https://img.icons8.com/color/256/slack-new.png"></a>
-      <a href="#"><img src="https://img.icons8.com/nolan/256/github.png"></a>
-      <a href="#"><img src="https://img.icons8.com/ultraviolet/256/twitter.png"></a>
-      <a href="#"><img src="https://img.icons8.com/nolan/256/facebook-new.png"></a>
-        </div>
-    </div>
-  </section>
-  
-  <!---------------------section footer------------------------->
-  <section id="footer">
-    <img src="https://fh-sites.imgix.net/sites/4403/2020/09/10190412/blue-row-top.png?auto=compress%2Cformat&w=1024&h=1024&fit=max" class="footer-img">
-    <div class="container">
-   <div class="footer-box2">
-          <h4><b>Live Poll Views</b></h4>
-            <p>Subscribe to get daily news on<br> Live election Matters. Press the<br> bell icon to get notification</p>
-        </div>
-            <div class="footer-box">
-          <p><b>Contact Us</b></p>
-              <p><i class="fa fa-map-marker"></i>alxswe program</p>
-              <p><i class="fa fa-phone"></i>+2348056803673</p>
-              <p><i class="fa fa-envelope"></i></i>alx@gmail.com</p>
-      </div>
-   <div class="col-md-4 foot-box">
-        <p class="foot"><b>Subscribe to Newsletters</b></p>
-      <input type="email" class="form-control" placeholder="Your Email">
-     
-     <button type="button" class="btn btn-primary">Subscribe</button>
-     </div>
-    </div>
-  <hr>
-  <p class="copy">&copy; All Right Reserved</p>
-  </section>
+<section id="services">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 services">
+				<img src="https://mail.google.com/mail/u/0?ui=2&ik=2896c403e2&attid=0.4&permmsgid=msg-a:r-4100486528872831214&th=187191319f31e80e&view=att&disp=safe&realattid=f_lfo1ht921">
+				<h4>Cast Your vote Wisely</h4>
+				<p>The future generation is build on the shpere on technology. View all the Election as voting is going on. Have
+					no worries, your comfort is all we want!</p>
+			</div>
+			<div class="col-md-4 services">
+				<img src="https://img.freepik.com/free-vector/work-time-concept-illustration_114360-1074.jpg?t=st=1679777611~exp=1679778211~hmac=e562d79bdc8d8a78aadb50bcfcd7517bb5e0b1cae6d0b85b5e4508d4b749ec0e" class="service-img">
+				<h4>View Your Result</h4>
+				<p>With Your Mobile Device or Your Computer, view the result now! Have no worries, your comfort is all we
+					want!</p>
+			</div>
+			<div class="col-md-4 services">
+				<img src="https://img.freepik.com/free-vector/progress-concept-illustration_114360-1522.jpg?t=st=1679777611~exp=1679778211~hmac=d22e230552417a1a68c89d1832021aa5561e9ef92bdb26cb965dcfe3eec5a282" class="service-img">
+				<h4>Run To Your Polling Unit</h4>
+				<p>The future generation is build on the shpere on technology. View all the Election as voting is going on. Have
+					no worries, your comfort is all we want!</p>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-----------------section social-media------>
+<section id="social-media">
+	<div class="container text-center">
+		<p>Find Us On Social Media</p>
+		<div class="social-icons">
+			<a href="#"><img src="https://img.icons8.com/nolan/256/linkedin.png"></a>
+			<a href="#"><img src="https://img.icons8.com/stickers/256/medium-logo.png"></a>
+			<a href="#"><img src="https://img.icons8.com/color/256/slack-new.png"></a>
+			<a href="#"><img src="https://img.icons8.com/nolan/256/github.png"></a>
+			<a href="#"><img src="https://img.icons8.com/ultraviolet/256/twitter.png"></a>
+			<a href="#"><img src="https://img.icons8.com/nolan/256/facebook-new.png"></a>
+		</div>
+	</div>
+</section>
+
+<!---------------------section footer------------------------->
+<section id="footer">
+	<img src="https://fh-sites.imgix.net/sites/4403/2020/09/10190412/blue-row-top.png?auto=compress%2Cformat&w=1024&h=1024&fit=max" class="footer-img">
+	<div class="container">
+		<div class="footer-box2">
+			<h4><b>Live Poll Views</b></h4>
+			<p>Subscribe to get daily news on<br> Live election Matters. Press the<br> bell icon to get notification</p>
+		</div>
+		<div class="footer-box">
+			<p><b>Contact Us</b></p>
+			<p><i class="fa fa-map-marker"></i>alxswe program</p>
+			<p><i class="fa fa-phone"></i>+2348056803673</p>
+			<p><i class="fa fa-envelope"></i></i>alx@gmail.com</p>
+		</div>
+		<div class="col-md-4 foot-box">
+			<p class="foot"><b>Subscribe to Newsletters</b></p>
+			<input type="email" class="form-control" placeholder="Your Email">
+
+			<button type="button" class="btn btn-primary">Subscribe</button>
+		</div>
+	</div>
+	<hr>
+	<p class="copy">&copy; All Right Reserved</p>
+</section>
 
 <!---------------------Smooth-scroll--------------------------->
 <script src="smooth-scroll"></script>
