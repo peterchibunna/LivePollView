@@ -11,7 +11,7 @@ Authors:
 At the moment, we're using sqlite for portability. For production, we'll move to a RDBMS, like
 MySQL, PostgreSQL, etc.
 
-We need to install the spatial extension depending on your Operating System
+We need to install the spatial extension (Geospatial Data Abstraction Library)(`gdal`) depending on your Operating System
 
 Ubuntu: `$ sudo apt install gdal-bin libgdal-dev`<br>
 Windows: <br>
