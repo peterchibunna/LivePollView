@@ -24,3 +24,4 @@ def import_state_gps_locations():
 	for i in locations:
 		a = State.objects.get_or_create(name=i[0], location=Point(i[1][0], i[1][1]))
 		print(a)
+
