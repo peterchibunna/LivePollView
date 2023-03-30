@@ -26,6 +26,7 @@ def import_state_gps_locations():
 		a = State.objects.get_or_create(name=i[0], location=Point(i[1][0], i[1][1]))
 		print(a)
 
+<<<<<<< HEAD
 =======
 from django.shortcuts import render
 
@@ -33,3 +34,5 @@ from django.shortcuts import render
 def index(request):
 	return render(request, 'map.html', {})
 >>>>>>> 257c758 (Feat: update te django FW)
+=======
+>>>>>>> 1d7f2d655ca1101ea3263e7527726639a9168e7e

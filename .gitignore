@@ -1,6 +1,3 @@
 **/migrations
 venv
 static
-.idea
-.iml
-LivePollView/__pycache__/*

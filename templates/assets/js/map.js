@@ -28,7 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
 //map.fitWorld();
 =======
 =======
+<<<<<<< HEAD
 >>>>>>> 257c758 (Feat: update te django FW)
+=======
+>>>>>>> 257c758c56f055315cb141d7aecc0fc5cd2e7200
+>>>>>>> 1d7f2d655ca1101ea3263e7527726639a9168e7e
 const copy = "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors";
 const url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 const layer = L.tileLayer(url, { attribution: copy });
@@ -37,4 +41,8 @@ map.fitWorld();
 <<<<<<< HEAD
 >>>>>>> 257c758 (Feat: update te django FW)
 =======
+<<<<<<< HEAD
 >>>>>>> 257c758 (Feat: update te django FW)
+=======
+>>>>>>> 257c758c56f055315cb141d7aecc0fc5cd2e7200
+>>>>>>> 1d7f2d655ca1101ea3263e7527726639a9168e7e
