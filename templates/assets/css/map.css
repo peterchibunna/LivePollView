@@ -7,3 +7,12 @@ body {
 	height: 100%;
 	width: 100%;
 }
+#election-types {
+	z-index: 2000;
+	margin: 2em;
+	min-width: 20em;
+}
+
+#election-types label {
+	display: block;
+}

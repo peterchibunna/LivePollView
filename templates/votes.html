@@ -1,0 +1,26 @@
+{% load static %}
+<div class="modal-header">
+	<h5 class="modal-title" id="exampleModalToggleLabel">Votes in {{ state.name }} [{{ election.name }}]</h5>
+	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+	<table class="table">
+		<thead>
+		<tr>
+			<th></th>
+			<th>Party</th>
+			<th class="text-nowrap">Votes Count</th>
+		</tr>
+		</thead>
+		<tbody>
+		{% for i in votes %}
+			<tr>
+				<td>{% with 'images/parties/'|add:i.party.abbr|lower|add:'.png' as logo %}
+					<img class="img-thumbnail w-40px" src="{% static logo %}" alt="Party Logo">{% endwith %}</td>
+				<td>{{ i.party.name }}</td>
+				<td class="text-end">{{ i.total }}</td>
+			</tr>
+		{% endfor %}
+		</tbody>
+	</table>
+</div>
