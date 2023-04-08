@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 const copy = "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors <br>Other Information: <a href=''>Project Details</a>";
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+const copy = "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors";
+>>>>>>> 57d53a778877923d2424538087c12b12dbcbaf8c
 const url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 const layer = L.tileLayer(url, { attribution: copy });
 var center = L.latLng(9.14006268023974, 9.041748046875002);
@@ -73,3 +79,23 @@ const loadInto = function (url, modal) {
 	})
 };
 //map.fitWorld();
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> 257c758 (Feat: update te django FW)
+=======
+>>>>>>> 257c758c56f055315cb141d7aecc0fc5cd2e7200
+>>>>>>> 1d7f2d655ca1101ea3263e7527726639a9168e7e
+const copy = "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors";
+const url = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+const layer = L.tileLayer(url, { attribution: copy });
+const map = L.map("map", { layers: [layer] });
+map.fitWorld();
+<<<<<<< HEAD
+>>>>>>> 257c758 (Feat: update te django FW)
+=======
+<<<<<<< HEAD
+>>>>>>> 257c758 (Feat: update te django FW)
+=======
+>>>>>>> 257c758c56f055315cb141d7aecc0fc5cd2e7200
+>>>>>>> 1d7f2d655ca1101ea3263e7527726639a9168e7e
