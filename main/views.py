@@ -1,11 +1,24 @@
 from django.contrib.gis.geos import Point
 from django.shortcuts import render
 
-from main.models import State
+from main.models import State, Party, Vote, Election
 
 
 def index(request):
 	return render(request, 'map.html', {})
+
+
+def test_view(request):
+	state = State.objects.get(pk=request.GET.get('state_id'))
+	election = Election.objects.get(pk=request.GET.get('election_id'))
+	votes = []
+	for party in Party.objects.all():
+		data = Vote.objects.get_or_create(election=election, party=party, state=state)[0]
+		votes.append(
+			dict(party=party, total=data.total)
+		)
+
+	return render(request, 'votes.html', {'votes': sorted(votes, key=lambda i: i['total'], reverse=True), 'state': state, 'election': election})
 
 
 def import_state_gps_locations():

@@ -15,16 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main.views import index
-from main.api import StateResource, VoteResource
+from main.views import index, test_view
+from main.api import StateResource, VoteResource, PartyResource, ElectionResource
 from tastypie.api import Api
 
 v1_api = Api(api_name='v1')
 v1_api.register(StateResource())
+v1_api.register(PartyResource())
+v1_api.register(VoteResource())
+v1_api.register(ElectionResource())
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('api/', include(v1_api.urls)),
-
+    path('get-votes', test_view, name='test-view')
 ]

@@ -1,4 +1,6 @@
 from django.contrib.gis.db import models
+from django.db.models.query import QuerySet
+from django_group_by import GroupByMixin
 
 
 class Election(models.Model):
@@ -17,8 +19,16 @@ class Party(models.Model):
 	name = models.CharField(max_length=100)
 
 
+class VoteQS(QuerySet, GroupByMixin):
+	pass
+
+
 class Vote(models.Model):
+	objects = VoteQS.as_manager()
 	party = models.ForeignKey(Party, on_delete=models.CASCADE)
 	total = models.IntegerField(default=0)
 	state = models.ForeignKey(State, on_delete=models.CASCADE)
 	election = models.ForeignKey('Election', on_delete=models.CASCADE)
+
+	class Meta:
+		ordering = ['-total']
