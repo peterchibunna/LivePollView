@@ -7,10 +7,11 @@ body {
 	height: 100%;
 	width: 100%;
 }
-#election-types {
-	z-index: 2000;
+#election-types, #project-info {
+	z-index: 1000;
 	margin: 2em;
 	min-width: 20em;
+	max-width: 20em;
 }
 
 #election-types label {

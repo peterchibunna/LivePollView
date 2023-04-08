@@ -8,8 +8,8 @@ Authors:
 
 
 ## Setup Requirements
-At the moment, we're using sqlite for portability. For production, we'll move to a RDBMS, like
-MySQL, PostgreSQL, etc.
+At the moment, we're using sqlite for portability. For production, we might move to a RDBMS, like
+MySQL, PostgreSQL, Oracle, etc.
 
 We need to install the spatial extension (Geospatial Data Abstraction Library)(`gdal`) depending on your Operating System
 
@@ -28,7 +28,7 @@ on macOS using Homebrew:
 `$ brew install spatialite-tools`
 
 
-## Testing
+## Testing and Installation and Usage
 This app is built on the **[Django](htttps://www.djangoproject.com) web framework**.
 
 - Clone the repo `git clone https://github.com/peterchibunna/LivePollView.git`
@@ -37,7 +37,8 @@ This app is built on the **[Django](htttps://www.djangoproject.com) web framewor
 - Activate the virtual environment: `source venv/bin/activate`
 - Install the project pip requirements: `pip install -r requirements.txt`
 - The run the test server: `./manage.py runserver localhost:8080`
-- Open your web browser and navigate to `http://localhost:8080/`
+- For deployment, we need gunicorn and nginx proxying the gunicorn socket.
+- Open your web browser and navigate to `http://localhost:8080/` or the address with port of your choice as configured
 
 ## Troubleshooting
 
