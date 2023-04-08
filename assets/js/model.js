@@ -19,7 +19,6 @@ inForm.addEventListener("submit", function(e) {
 
     const inFormData = new FormData(inForm)
     const fullName = inFormData.get("fullName")
-    console.log(fullName)
 
     modelText.innerHTML = `
     <div class = "model-inner-loading">
