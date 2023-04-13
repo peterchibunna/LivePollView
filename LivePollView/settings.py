@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 	'django.contrib.gis',
 	'tastypie',
 	'main.apps.MainConfig',
+	'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -112,3 +113,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRONJOBS = [
+	('* * * * *', 'main.cron.do_vote'),  # every minute,
+	# todo ./manage.py crontab add
+]
