@@ -1,0 +1,17 @@
+[Unit]
+Description=gunicorn reporting daemon
+After=network.target
+
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/home/ubuntu/LivePollView
+ExecStart=/home/ubuntu/LivePollView/venv/bin/gunicorn --access-logfile - --workers 3 --timeout 600 --bind unix:/home/ubuntu/LivePollView/LivePollView.sock LivePollView.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
+; put this file in `/etc/systemd/system/gunicorn@livepoll.service`
+
+
+; then create the nginx file that binds to the sock file without which it would not work

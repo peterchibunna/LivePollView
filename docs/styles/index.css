@@ -16,7 +16,7 @@ body {
 
 .navbar {
 	background-image: linear-gradient(to right, #fff, #006bb3, #fff);
-	padding: 2em !important;
+	padding: 2 !important;
 }
 
 .navbar-brand {
@@ -44,18 +44,14 @@ body {
 	font-size: 30px !important;
 }
 
-.navbar-toggler {
+navbar-toggler {
 	outline: none !important;
 }
 
 /* -------------section banner-------------------------- */
 #banner {
-	/*background-image:linear-gradient(to right, #fff,#006bb3, #fff);*/
-	background-image:
-	url("../images/hero-image.png");
-	background-size: cover;
+	background-image: linear-gradient(to right, #fff, #006bb3, #fff);
 	color: #fff;
-	padding-top: 5%;
 	box-sizing: border-box;
 	border-radius: 20px;
 
@@ -207,4 +203,10 @@ hr {
 	margin: 0px;
 	padding: 20px;
 	text-align: center;
+}
+
+.row.shadowed {
+	background-image: linear-gradient(to right, hsl(204deg 100% 35% / 71%), #fff0) !important;
+	border-radius: 10px;
+	margin: 1em 0;
 }

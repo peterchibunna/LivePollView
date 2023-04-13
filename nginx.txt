@@ -1,0 +1,38 @@
+# server {
+#     listen 80;
+#     server_name peterchibunna.tech www.peterchibunna.tech;
+#     return 301 https://peterchibunna.tech$request_uri;
+# }
+
+server {
+#         listen 443 ssl;
+        listen 8000;
+        server_name peterchibunna.tech www.peterchibunna.tech;
+        proxy_connect_timeout 75s;
+        client_max_body_size 200M;
+        proxy_read_timeout 600s;
+
+#         location /static {
+#                 alias /home/ubuntu/LivePollView/static;
+#         }
+
+        location /static {
+                alias /home/ubuntu/LivePollView/templates/assets;
+        }
+
+        location /media {
+                alias /home/ubuntu/LivePollView/media;
+        }
+
+        location / {
+                include proxy_params;
+                proxy_pass http://unix:/home/ubuntu/LivePollView/LivePollView.sock;
+        }
+        location /favicon.ico {
+                alias /home/ubuntu/LivePollView/templates/assets/favicon_io/favicon.ico;
+                access_log off;
+                log_not_found off;
+        }
+        ssl_certificate         /etc/letsencrypt/live/peterchibunna.tech/fullchain.pem;
+        ssl_certificate_key     /etc/letsencrypt/live/peterchibunna.tech/privkey.pem;
+}
