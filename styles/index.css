@@ -1,5 +1,5 @@
 *{
-    padding: 0; 
+    padding: 0;
     margin: 0;
 }
 body
@@ -15,7 +15,7 @@ body
 }
 .navbar
 {
-    background-image: linear-gradient(to right, #fff,#006bb3, #fff); 
+    background-image: linear-gradient(to right, #fff,#006bb3, #fff);
     padding: 2!important;
 }
 .navbar-brand
@@ -53,7 +53,6 @@ navbar-toggler
 {
     background-image:linear-gradient(to right, #fff,#006bb3, #fff);
     color:#fff;
-    padding-top: 5%;
   box-sizing:border-box;
   border-radius: 20px;
 
@@ -73,7 +72,7 @@ navbar-toggler
     color: #fff;
     text-decoration: none;
 }
-#banner a img 
+#banner a img
 {
     outline: none!important;
 }
@@ -141,13 +140,13 @@ navbar-toggler
 {
   width: 120px;
   margin-bottom:20px;
-} 
+}
 .container
 {
   width:100%;
   display:flex;
 }
-.footer-box 
+.footer-box
 {
   margin-left:45px;
   margin-top:30px;
@@ -196,7 +195,7 @@ navbar-toggler
   border-radius: 0;
   margin-top:30px;
 }
-hr 
+hr
 {
   background-color:#fff;
 }
@@ -205,4 +204,10 @@ hr
   margin: 0px;
   padding:20px;
   text-align:center;
+}
+
+.row.shadowed {
+  background-image: linear-gradient(to right, hsl(204deg 100% 35% / 71%), #fff0) !important;
+  border-radius: 10px;
+  margin: 1em 0;
 }
