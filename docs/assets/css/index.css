@@ -55,7 +55,6 @@ body {
 	url("../images/hero-image.png");
 	background-size: cover;
 	color: #fff;
-	padding-top: 5%;
 	box-sizing: border-box;
 	border-radius: 20px;
 
@@ -102,7 +101,7 @@ body {
 #service h4 {
 	margin: 5px;
 	margin-top: 25px;
-	text-transformation: uppercase;
+	text-transform: uppercase;
 }
 
 /* ------------------section social media------------- */

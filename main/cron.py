@@ -12,6 +12,6 @@ def do_vote():
 		for state in State.objects.all():
 			for party in Party.objects.all():
 				v = Vote.objects.get_or_create(party=party, state=state, election=election)[0]
-				v.total += random.randint(1, 100)
+				v.total += random.randint(1, 5)
 				v.save()
 	pass
