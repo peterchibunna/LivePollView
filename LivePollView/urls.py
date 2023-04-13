@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main.views import index, test_view
+from main.views import index, test_view, acme_challenge
 from main.api import StateResource, VoteResource, PartyResource, ElectionResource
 from tastypie.api import Api
 
@@ -26,6 +26,7 @@ v1_api.register(VoteResource())
 v1_api.register(ElectionResource())
 
 urlpatterns = [
+    path('.well-known/acme-challenge/<str:codes>', acme_challenge),
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('api/', include(v1_api.urls)),
