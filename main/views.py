@@ -1,8 +1,13 @@
 from django.contrib.gis.geos import Point
+from django.http.response import HttpResponse
 from django.shortcuts import render
 
 from main.models import State, Party, Vote, Election
 
+
+def acme_challenge(request, codes):
+	full_code = ''
+	return HttpResponse(full_code)
 
 def index(request):
 	return render(request, 'map.html', {})
