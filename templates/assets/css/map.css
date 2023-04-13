@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html,
 body {
 	height: 100%;
@@ -18,14 +17,3 @@ body {
 #election-types label {
 	display: block;
 }
-=======
-html,
-body {
-	height: 100%;
-	margin: 0;
-}
-#map {
-	height: 100%;
-	width: 100%;
-}
->>>>>>> 57d53a778877923d2424538087c12b12dbcbaf8c

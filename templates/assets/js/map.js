@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			let url = states[i].id;
 			marker.on('click', function (e) {
 				loadInto('get-votes?state_id='+url+'&election_id='+$('#election-types select').val() || 1, '#votesModal');
-				modal.show();
+				//modal.show();
 			})
 		}
 	});
