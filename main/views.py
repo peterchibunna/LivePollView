@@ -6,11 +6,18 @@ from main.models import State, Party, Vote, Election
 
 
 def acme_challenge(request, codes):
+	"""
+	view that certbot uses to verify the domain during SSL certificate generation
+	"""
 	full_code = ''
 	return HttpResponse(full_code)
 
 
 def index(request):
+	"""
+	The main app's page showing the map.
+	From here the api calls are made to load the markers for the states
+	"""
 	return render(request, 'map.html', {})
 
 
