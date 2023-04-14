@@ -41,6 +41,10 @@ This app is built on the **[Django](htttps://www.djangoproject.com) web framewor
 - For deployment, we need gunicorn and nginx proxying the gunicorn socket.
 - Open your web browser and navigate to `http://localhost:8080/` or the address with port of your choice as configured
 
+## Screenshots
+<img src="docs/1.png" width="100%">
+<img src="docs/2.png" width="100%">
+
 ## Troubleshooting
 
 Make sure the required packages are installed. For example, you might encounter errors
