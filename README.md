@@ -5,7 +5,8 @@ Authors:
 - Peter
 - Ezechiel
 - Japhet
-
+## Demo
+A demo is available at https://peterchibunna.github.io/LivePollView/  with a CTA linking to https://peterchibunna.tech/
 
 ## Setup Requirements
 At the moment, we're using sqlite for portability. For production, we might move to a RDBMS, like

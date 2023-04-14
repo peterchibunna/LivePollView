@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from main.views import index, test_view, acme_challenge
+from main.views import index, votes_view_modal, acme_challenge
 from main.api import StateResource, VoteResource, PartyResource, ElectionResource
 from tastypie.api import Api
 
@@ -30,5 +30,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('api/', include(v1_api.urls)),
-    path('get-votes', test_view, name='test-view')
+    path('get-votes', votes_view_modal, name='view-votes')
 ]

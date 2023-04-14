@@ -11,22 +11,18 @@ const map = L.map("map", {
 document.addEventListener('DOMContentLoaded', function () {
 	var myModalEl = document.querySelector('#votesModal');
 	var modal = bootstrap.Modal.getOrCreateInstance(myModalEl);
-	myModalEl.addEventListener('shown.bs.modal', function (event) {
 
-	});
 	fetch('/api/v1/state/?limit=50').then(response=>response.json()).then(function (response) {
-		// console.log(response.objects);
 		var states = response.objects;
 		for (var i = 0; i < states.length; i++) {
 			var marker = new L.Marker([states[i].location.coordinates[0], states[i].location.coordinates[1]], {
 				radius: 20,
 			})
-				//.bindPopup(states[i].name)
 				.addTo(map);
-			let url = states[i].id;
+			let state_id = states[i].id;
 			marker.on('click', function (e) {
-				loadInto('get-votes?state_id='+url+'&election_id='+$('#election-types select').val() || 1, '#votesModal');
-				//modal.show();
+				loadInto('get-votes?state_id='+state_id+'&election_id='+$('#election-types select').val() || 1, '#votesModal');
+				modal.show();
 			})
 		}
 	});
